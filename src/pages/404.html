@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<%= htmlWebpackPlugin.options.head %>
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+	<section class="section section--primary mt-60 pt-100 pb-100 mtm-0 mbm-60">
+		<div class="container">
+			<div class="error-page">
+				<picture class="error-page__picture">
+					<img src="./assets/images/icon-404.svg" alt="">
+				</picture>
+				<h2 class="error-page__title">Страница не найдена</h2>
+				<p class="error-page__text">К сожалению, этой страницы не существует</p>
+				<a href="/catalog.html" class="button">Перейти в каталог</a>
+			</div>
+		</div>
+	</section>
+</main>
+<div class="menu-mobile">
+	<a href="#" class="menu-mobile__item" data-dropdown-open="catalog">
+		<svg class="menu-mobile__icon">
+			<use xlink:href="./assets/sprite/sprite.svg#icon-cascad"></use>
+		</svg>
+		<p class="menu-mobile__text">Каталог</p>
+	</a>
+	<a href="#" class="menu-mobile__item">
+		<svg class="menu-mobile__icon">
+			<use xlink:href="./assets/sprite/sprite.svg#icon-layout"></use>
+		</svg>
+		<p class="menu-mobile__text">Проекты</p>
+	</a>
+	<a href="#" class="menu-mobile__item">
+		<svg class="menu-mobile__icon">
+			<use xlink:href="./assets/sprite/sprite.svg#icon-basket"></use>
+		</svg>
+		<span class="menu-mobile__counter">22</span>
+		<p class="menu-mobile__text">Корзина</p>
+	</a>
+</div>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<div class="modal" id="modal" data-modal>
+	<article class="card-product">
+		<div class="card-product__picture">
+			<div class="f-carousel" data-carousel>
+				<div class="f-carousel__viewport">
+					<div class="f-carousel__slide">
+						<div class="f-panzoom">
+							<img src="https://via.placeholder.com/700x700/92c95" alt=""/>
+						</div>
+					</div>
+					<div class="f-carousel__slide">
+						<div class="f-panzoom">
+							<img src="https://via.placeholder.com/300x100/92c95" alt=""/>
+						</div>
+					</div>
+					<div class="f-carousel__slide">
+						<div class="f-panzoom">
+							<img src="https://via.placeholder.com/500x100/92c95" alt=""/>
+						</div>
+					</div>
+					<div class="f-carousel__slide">
+						<div class="f-panzoom">
+							<img src="https://via.placeholder.com/120x800/92c95"
+							/>
+						</div>
+					</div>
+					<div class="f-carousel__slide">
+						<div class="f-panzoom">
+							<img src="https://via.placeholder.com/300x300/92c95"/>
+						</div>
+					</div>
+				</div>
+				<div class="carousel__counter">
+					<span class="carousel__index" data-carousel-index>1</span>
+					/
+					<span class="carousel__count" data-carousel-count>6</span>
+				</div>
+			</div>
+		</div>
+		<article class="product-info">
+			<p class="product-info__article">Арт. 8252791</p>
+			<h2 class="product-info__title">Краска finch для стен и потолков моющаяся 1 л. Черная</h2>
+			<p class="product-info__description">Повседневная практика показывает, что укрепление и развитие
+				структуры влечет за собой процесс внедрения и модернизации новых предложений. С другой
+				стороны
+				сложившаяся структура организации требуют от нас анализа соответствующий условий
+				активизации.</p>
+			<div class="product-info__controls">
+				<div class="price">
+					<p class="price__text">7 000<span>₽</span></p>
+				</div>
+				<div class="product-info__counter counter" data-counter>
+					<button class="counter__button" data-c-minus>
+						<svg class="counter__icon">
+							<use xlink:href="./assets/sprite/sprite.svg#icon-minus"></use>
+						</svg>
+					</button>
+					<span class="counter__value" data-c-value>1</span>
+					<button class="counter__button" data-c-plus>
+						<svg class="counter__icon">
+							<use xlink:href="./assets/sprite/sprite.svg#icon-plus"></use>
+						</svg>
+					</button>
+				</div>
+				<button class="button button--field">В корзину</button>
+				<button class="button button--orange--transparent">В проект</button>
+			</div>
+			<div class="product-info__property">
+				<ul class="product-info__list">
+					<li class="product-info__item">
+						<p class="product-info__text">Страна бренда:</p>
+						<div class="dotted"></div>
+						<p class="product-info__text">Италия</p>
+					</li>
+					<li class="product-info__item">
+						<p class="product-info__text">Производитель:</p>
+						<div class="dotted"></div>
+						<a class="product-info__link" href="#">Ragno</a>
+					</li>
+					<li class="product-info__item">
+						<p class="product-info__text">Цвет:</p>
+						<div class="dotted"></div>
+						<p class="product-info__text">коричневый, серый</p>
+					</li>
+					<li class="product-info__item">
+						<p class="product-info__text">Назначение:</p>
+						<div class="dotted"></div>
+						<p class="product-info__text">для стен и пола</p>
+					</li>
+				</ul>
+			</div>
+			<button type="button" class="button mt-a">Больше информации</button>
+		</article>
+	</article>
+	<div class="modal__close" data-close></div>
+</div>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

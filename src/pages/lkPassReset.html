@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<%= htmlWebpackPlugin.options.head %>
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+	<%= htmlWebpackPlugin.options.breadcrumbs %>
+	<section class="section mb-100 mbm-40">
+		<div class="container">
+			<div class="auth">
+				<h2 class="auth__title title title--medium">Новый пароль</h2>
+				<form action="#" class="auth-form mb-20" data-form>
+					<fieldset class="auth-form__wrapper">
+						<label class="form__item" data-input-item>
+							<input type="password" class="input input--light" minlength="3" placeholder="Пароль"
+								   name="company-password" required data-input>
+							<span class="form__warning" data-warning>
+								<svg class="form__icon">
+									<use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+								</svg>
+								Поле заполнено некорректно
+							</span>
+						</label>
+						<label class="form__item" data-input-item>
+							<input type="password" class="input input--light" minlength="3"
+								   placeholder="Подтверждение пароля"
+								   name="company-password-accept" required data-input>
+							<span class="form__warning" data-warning>
+								<svg class="form__icon">
+									<use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+								</svg>
+								Поле заполнено некорректно
+							</span>
+						</label>
+					</fieldset>
+					<button class="button button--field">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section section--search mob-hidden mbm-20">
+        <div class="container">
+            <div class="search-box" data-search-box>
+                <div class="search" data-search>
+                    <svg class="search__icon" data-icon>
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-search"></use>
+                    </svg>
+                    <input class="search__input" type="text" placeholder="Поиск по бренду" data-search="input">
+                </div>
+            </div>
+        </div>
+    </section>
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section pb-100 pbm-50">
+        <div class="container">
+            <div class="columns columns--center">
+                <div class="columns__col columns__col--4">
+                    <h1 class="title mb-20">Условия работы
+                        с диллерами</h1>
+                    <p class="subtitle mb-10">
+                        Таким образом новая модель организационной деятельности влечет за собой процесс внедрения и
+                        модернизации соответствующий условий активизации.
+                    </p>
+                </div>
+                <div class="columns__col columns__col--1"></div>
+                <div class="columns__col columns__col--7">
+                    <picture class="picture picture--intro">
+                        <img class="picture__img" src="./assets/images/employee-3-full.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray pt-60 ptm-40 pbm-20 pb-60">
+        <div class="container">
+            <div class="text text--margins text--primary">
+                <h3>Ищете уникальный цвет краски для<br class="mob-hidden"/> реализации ваших идей?</h3>
+                <p>
+                    Воспользуйтесь услугой колеровки в Dom Decor. Колеруйте краску для стен, потолков, обоев, дерева,
+                    металла и фасадов в любые оттенки благодаря широкой палитре цветов. Белая краска (база А)
+                    рекомендована для колеровки в пастельные цвета. Прозрачная база (база С) предназначена для колеровки
+                    в яркие и насыщенные цвета. Услуга также доступна для декоративной и фасадной штукатурки.
+                </p>
+                <ul>
+                    <li>Получение любого оттенка за считанные минуты</li>
+                    <li>Широкая палитра цветов</li>
+                    <li>Сохранение свойств и характеристик краски после колеровки</li>
+                    <li>Точный результат при повторном воспроизведении нужного оттенка<br> (рекомендовано приобретение
+                        краски одной партии)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-110 ptm-60 pbm-60 pb-80">
+        <div class="container">
+            <div class="columns rgap-20">
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <article class="article-step">
+                        <picture class="article-step__picture">
+                            <img src="https://fakeimg.pl/600x400" alt="">
+                        </picture>
+                        <p>Сохраняйте товары, которые вам нравятся</p>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <article class="article-step">
+                        <picture class="article-step__picture">
+                            <img src="https://fakeimg.pl/600x400" alt="">
+                        </picture>
+                        <p>Составляйте из товаров целые комнаты и проекты</p>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <article class="article-step">
+                        <picture class="article-step__picture">
+                            <img src="https://fakeimg.pl/600x400" alt="">
+                        </picture>
+                        <p>Пишите комментарии к товарам и комнатам</p>
+                    </article>
+                </div>
+                <div class="columns__col columns__col--3 columns__col--mob-2">
+                    <article class="article-step">
+                        <picture class="article-step__picture">
+                            <img src="https://fakeimg.pl/600x400" alt="">
+                        </picture>
+                        <p>Отправляйте целые комнаты в корзину или выгружайте PDF</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="feedback">
+                <div class="feedback__wrapper feedback__wrapper--text">
+                    <h2 class="feedback__title">Остались вопросы?</h2>
+                    <p class="feedback__text">Если вам нужна помощь – оставьте свои данные и ваш вопрос, мы свяжемся с
+                        вами в ближайшее время</p>
+                </div>
+                <div class="feedback__wrapper">
+                    <form class="feedback__form form" action="/api/forms/questionForm" data-form data-agreement>
+                        <fieldset class="form__wrapper">
+                            <label class="form__item" data-input-item>
+                                <input
+                                        class="input input--fill"
+                                        type="text"
+                                        name="USER_NAME"
+                                        minlength="3"
+                                        placeholder="Имя"
+                                        required
+                                        data-input="name"
+                                >
+                                <span class="form__warning" data-warning>
+                                    <svg class="form__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+                                    </svg>
+                                    Поле заполнено некорректно
+                                </span>
+                            </label>
+                            <label class="form__item" data-input-item>
+                                <input
+                                        class="input input--fill"
+                                        type="tel"
+                                        name="USER_PHONE"
+                                        placeholder="Телефон"
+                                        pattern="[0-9]{3}[0-9]{3}[0-9]{5}"
+                                        required
+                                        data-input="phone"
+                                >
+                                <span class="form__warning">
+                                    <svg class="form__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+                                    </svg>
+                                    Поле заполнено некорректно
+                                </span>
+                            </label>
+                        </fieldset>
+                        <label class="form__item" data-input-item>
+                            <textarea
+                                    class="input input--area input--fill"
+                                    name="USER_QUESTION"
+                                    placeholder="Ваш вопрос"
+                                    required
+                                    data-input="textarea"
+                            ></textarea>
+                            <span class="form__warning">
+                                    <svg class="form__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+                                    </svg>
+                                    Поле заполнено некорректно
+                                </span>
+                        </label>
+                        <fieldset class="form__wrapper form__wrapper-policy">
+                            <button
+                                    type="submit"
+                                    class="form__button button button--middle button--field"
+                                    data-submit
+                                    data-agreement-button
+                            >Отправить
+                            </button>
+                            <div class="form__policy">
+                                <label class="filter-checkbox filter-checkbox--policy">
+                                    <input class="hidden" type="checkbox" name="POLICY_ACCEPT" data-agreement-checkbox>
+                                    <span class="checkbox">
+                                            <svg>
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                            </svg>
+                                        </span>
+                                    <span class="filter-checkbox__info">
+                                        Cогласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <p class="form__accepted" data-accept="2"><span>Успешно!</span> ваше сообщение отправлено</p>
+                    </form>
+                </div>
+                <svg class="feedback__icon feedback__icon_orange">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-vector-orange"></use>
+                </svg>
+                <svg class="feedback__icon feedback__icon_blue">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-vector-blue"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-50 pb-110 pbm-70">
+        <div class="container">
+            <div class="editor editor--20 editor--gray">
+                <p>
+                    Сервисы магазинов – широкий ассортимент товаров для строительства, ремонта и обустройства дома в
+                    розничных магазинах и интернет-магазине Леруа Мерлен Краснодара. Подберите нужный товар в нашем
+                    каталоге или загляните в ближайший гипермаркет Леруа Мерлен!
+                </p>
+                <p>
+                    Леруа Мерлен предлагает широкий выбор товаров по низким ценам для жителей Краснодарского края, таких
+                    как Анапа, Анапская, Апшеронск, Армавир, Архипо-Осиповка, Афипский, Ахтырский, Белая Глина,
+                    Белореченск, Брюховецкая, Варениковская, Витязево, Выселки, Геленджик, Горячий Ключ, Гостагаевская,
+                    Гулькевичи, Джубга, Дивноморское, Динская, Ейск, Елизаветинская, Ильский, Кабардинка, Калининская,
+                    Каневская, Кореновск, Красная Поляна, Краснодар, Кропоткин, Крыловская, Курганинск, Кущёвская,
+                    Лабинск, Лазаревское, Ленинградская, Лорис, Майкоп, Медведовская, Мостовской, Мысхако, Натухаевская,
+                    Новокубанск, Новомихайловский, Новомышастовская, Новопокровская, Новотитаровская, Октябрьская,
+                    Отрадная, Павловская, Пластуновская, Полтавская, Приморско-Ахтарск, Раевская, Северская,
+                    Славянск-на-Кубани, Смоленская, Совхозный, Сочи, Старокорсунская станица, Староминская, Супсех,
+                    Тамань, Тбилисская, Темрюк, Тимашёвск, Тихорецк, Трудобеликовский, Туапсе, Усть-Лабинск, Хадыженск,
+                    Хутор Ленина, Цемдолина, Южный. Вы можете заказать необходимые товары онлайн с доставкой во все эти
+                    города или посетить один из наших розничных магазинов.
+                </p>
+                <p>
+                    Подробную информацию о магазинах Леруа Мерлен в Краснодаре и ассортименте продукции Вы найдете на
+                    нашем сайте. Также Вы можете посетить наши гипермаркеты в Краснодаре и получить подробные
+                    консультации по интересующим Вас вопросам непосредственно у наших специалистов.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

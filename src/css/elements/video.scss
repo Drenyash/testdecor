@@ -1,0 +1,9 @@
+.video {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: rem(557);
+  background-color: $gray-light;
+  cursor: pointer;
+  @include video;
+}

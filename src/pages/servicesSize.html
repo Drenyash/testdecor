@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body" data-body>
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <%= htmlWebpackPlugin.options.breadcrumbs %>
+    <section class="section mb-100 mbm-40">
+        <div class="container">
+            <div class="services-page">
+                <div class="services-page__grid">
+                    <div class="services-page__item services-page__item--info">
+                        <h1 class="title mb-30 mbm-20">Замеры</h1>
+                        <p class="subtitle">Услуга, способная дать максимально полные данные о необходимом количестве
+                            строительных материалов</p>
+                    </div>
+                    <div class="services-page__item">
+                        <img src="./assets/images/services-size.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--gray pt-100 ptm-40 pbm-60 pb-100">
+        <div class="container">
+            <div class="list list--small">
+                <article class="article-list">
+                    <svg class="article-list__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-size"></use>
+                    </svg>
+                    <div class="text text--primary">
+                        <h3>Как правильно рассчитать количество материалов?</h3>
+                        <p>
+                            Воспользуйтесь услугой Замеры в Dom Decor. Услуга позволяет определить точные размеры и
+                            объемы необходимых материалов для выполнения строительных и ремонтных работ. Замеры
+                            проводятся нашими специалистами, которые помогут произвести замеры и составить подробный
+                            отчет с расчетом объема и стоимости необходимых материалов.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-55 pb-70">
+        <div class="container">
+            <div class="text text--30 text--margins text--primary">
+                <h3>Преимущества услуги замеров у нас</h3>
+                <ul>
+                    <li>Получение любого оттенка за считанные минуты</li>
+                    <li>Широкая палитра цветов</li>
+                    <li>Сохранение свойств и характеристик краски после колеровки</li>
+                    <li>Точный результат при повторном воспроизведении нужного оттенка (рекомендовано<br/>
+                        приобретение краски одной партии)
+                    </li>
+                </ul>
+                <p>
+                    Внимание! Услуга платная и предоставляется в отношении товаров приобретенных только в магазинах
+                    Леруа Мерлен. Расчёт стоимости осуществляется после консультации в магазине Леруа Мерлен. Данные о
+                    ценах и наличии услуги могут отличаться. Пожалуйста, уточняйте актуальную информацию в магазине.
+                    Приобретаемые товары с оказанными услугами колеровки, резки стекла и дерева, пошива, оверлока в
+                    соответствии с Постановлением Правительства РФ №2463 от 31.12.2020, обмену и возврату не подлежат.
+                    Пожалуйста, будьте внимательны при выборе.График работы сотрудника колеровочного центра уточняйте в
+                    магазине по номеру телефона <a href="#">8 800 700-00-99</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section section--feedback">
+        <div class="container">
+            <div class="feedback">
+                <div class="feedback__wrapper feedback__wrapper--text">
+                    <h2 class="feedback__title">Остались вопросы?</h2>
+                    <p class="feedback__text">Если вам нужна помощь – оставьте свои данные и ваш вопрос, мы свяжемся с
+                        вами в ближайшее время</p>
+                </div>
+                <div class="feedback__wrapper">
+                    <form class="feedback__form form" action="/api/forms/questionForm" data-form data-agreement>
+                        <fieldset class="form__wrapper">
+                            <label class="form__item" data-input-item>
+                                <input
+                                        class="input input--fill"
+                                        type="text"
+                                        name="USER_NAME"
+                                        minlength="3"
+                                        placeholder="Имя"
+                                        required
+                                        data-input="name"
+                                >
+                                <span class="form__warning" data-warning>
+                                    <svg class="form__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+                                    </svg>
+                                    Поле заполнено некорректно
+                                </span>
+                            </label>
+                            <label class="form__item" data-input-item>
+                                <input
+                                        class="input input--fill"
+                                        type="tel"
+                                        name="USER_PHONE"
+                                        placeholder="Телефон"
+                                        pattern="[0-9]{3}[0-9]{3}[0-9]{5}"
+                                        required
+                                        data-input="phone"
+                                >
+                                <span class="form__warning">
+                                    <svg class="form__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+                                    </svg>
+                                    Поле заполнено некорректно
+                                </span>
+                            </label>
+                        </fieldset>
+                        <label class="form__item" data-input-item>
+                            <textarea
+                                    class="input input--area input--fill"
+                                    name="USER_QUESTION"
+                                    placeholder="Ваш вопрос"
+                                    required
+                                    data-input="textarea"
+                            ></textarea>
+                            <span class="form__warning">
+                                    <svg class="form__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-attention-fill"></use>
+                                    </svg>
+                                    Поле заполнено некорректно
+                                </span>
+                        </label>
+                        <fieldset class="form__wrapper form__wrapper-policy">
+                            <button
+                                    type="submit"
+                                    class="form__button button button--middle button--field"
+                                    data-submit
+                                    data-agreement-button
+                            >Отправить
+                            </button>
+                            <div class="form__policy">
+                                <label class="filter-checkbox filter-checkbox--policy">
+                                    <input class="hidden" type="checkbox" name="POLICY_ACCEPT" data-agreement-checkbox>
+                                    <span class="checkbox">
+                                            <svg>
+                                                <use xlink:href="./assets/sprite/sprite.svg#icon-accept-second"></use>
+                                            </svg>
+                                        </span>
+                                    <span class="filter-checkbox__info">
+                                        Cогласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <p class="form__accepted" data-accept="2"><span>Успешно!</span> ваше сообщение отправлено</p>
+                    </form>
+                </div>
+                <svg class="feedback__icon feedback__icon_orange">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-vector-orange"></use>
+                </svg>
+                <svg class="feedback__icon feedback__icon_blue">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-vector-blue"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-80 pb-80">
+        <div class="container">
+            <div class="editor editor--20 editor--gray">
+                <p>
+                    Сервисы магазинов – широкий ассортимент товаров для строительства, ремонта и обустройства дома в
+                    розничных магазинах и интернет-магазине Леруа Мерлен Краснодара. Подберите нужный товар в нашем
+                    каталоге или загляните в ближайший гипермаркет Леруа Мерлен!
+                </p>
+                <p>
+                    Леруа Мерлен предлагает широкий выбор товаров по низким ценам для жителей Краснодарского края, таких
+                    как Анапа, Анапская, Апшеронск, Армавир, Архипо-Осиповка, Афипский, Ахтырский, Белая Глина,
+                    Белореченск, Брюховецкая, Варениковская, Витязево, Выселки, Геленджик, Горячий Ключ, Гостагаевская,
+                    Гулькевичи, Джубга, Дивноморское, Динская, Ейск, Елизаветинская, Ильский, Кабардинка, Калининская,
+                    Каневская, Кореновск, Красная Поляна, Краснодар, Кропоткин, Крыловская, Курганинск, Кущёвская,
+                    Лабинск, Лазаревское, Ленинградская, Лорис, Майкоп, Медведовская, Мостовской, Мысхако, Натухаевская,
+                    Новокубанск, Новомихайловский, Новомышастовская, Новопокровская, Новотитаровская, Октябрьская,
+                    Отрадная, Павловская, Пластуновская, Полтавская, Приморско-Ахтарск, Раевская, Северская,
+                    Славянск-на-Кубани, Смоленская, Совхозный, Сочи, Старокорсунская станица, Староминская, Супсех,
+                    Тамань, Тбилисская, Темрюк, Тимашёвск, Тихорецк, Трудобеликовский, Туапсе, Усть-Лабинск, Хадыженск,
+                    Хутор Ленина, Цемдолина, Южный. Вы можете заказать необходимые товары онлайн с доставкой во все эти
+                    города или посетить один из наших розничных магазинов.
+                </p>
+                <p>
+                    Подробную информацию о магазинах Леруа Мерлен в Краснодаре и ассортименте продукции Вы найдете на
+                    нашем сайте. Также Вы можете посетить наши гипермаркеты в Краснодаре и получить подробные
+                    консультации по интересующим Вас вопросам непосредственно у наших специалистов.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+</html>

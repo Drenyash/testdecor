@@ -1,0 +1,55 @@
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+  padding-bottom: rem(50);
+  padding-right: rem(10);
+  height: calc(100% - 40px);
+  overflow-y: auto;
+
+  @include scrollbar;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__search {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+  }
+
+  &__nav-user {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+  }
+
+  &__text {
+    @include r(1200) {
+      font-size: rem(14);
+      line-height: rem(22);
+    }
+  }
+
+  &__location {
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include r(1200) {
+      flex-direction: column;
+      border-top: 1px solid $gray;
+    }
+
+    &.show {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding-top: 20px;
+    }
+  }
+}

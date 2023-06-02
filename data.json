@@ -1,0 +1,139 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "title": "Квартира на ул.А.Невского",
+      "picture": "https://almode.ru/uploads/posts/2021-06/1624025148_6-almode_ru-p-luchshie-intereri-kvartir-7.jpg",
+      "rooms": [
+        {
+          "roomId": 0,
+          "id": 0,
+          "roomTitle": "Гостиная",
+          "picture": "https://almode.ru/uploads/posts/2021-07/1625496153_28-almode_ru-p-kvartira-v-stile-modern-29.jpg",
+          "materials": [
+            {
+              "id": 0,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            },
+            {
+              "id": 1685629375363,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            }
+          ]
+        },
+        {
+          "roomId": 1,
+          "id": 1,
+          "roomTitle": "Спальня",
+          "picture": "https://мебельная-фабрика-имени-бадаева.рф/d/spalni_2021_goda.jpg",
+          "materials": [
+            {
+              "id": 0,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            },
+            {
+              "id": 1685629350143,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            }
+          ]
+        },
+        {
+          "roomId": 2,
+          "id": 2,
+          "roomTitle": "Детская",
+          "picture": "https://gracia-mebel.ru/wp-content/uploads/2018/12/detskaya-komnata-v-biryuzovykh-tonakh5.jpg",
+          "materials": [
+            {
+              "id": 0,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            },
+            {
+              "id": 1685629328562,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            },
+            {
+              "id": 1685629338506,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Квартира в Москве",
+      "picture": "https://almode.ru/uploads/posts/2021-06/1624025148_6-almode_ru-p-luchshie-intereri-kvartir-7.jpg",
+      "rooms": [
+        {
+          "roomId": 0,
+          "id": 0,
+          "roomTitle": "Гостиная",
+          "picture": "https://almode.ru/uploads/posts/2021-07/1625496153_28-almode_ru-p-kvartira-v-stile-modern-29.jpg",
+          "materials": [
+            {
+              "id": 0,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            },
+            {
+              "id": 1685629375363,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1685629428056,
+      "title": "Проект 1",
+      "picture": "blob:http://localhost:9000/2ec77528-8d9f-4300-90d7-29ead2921e56",
+      "rooms": [
+        {
+          "roomId": 1685629428056,
+          "id": 1685629439783,
+          "roomTitle": "Комната 1",
+          "picture": "blob:http://localhost:9000/2fe552d6-db5a-4f9e-8b3a-2fa9505fe29a",
+          "materials": [
+            {
+              "id": 1685629455687,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            }
+          ]
+        },
+        {
+          "roomId": 1685629428056,
+          "id": 1685629448775,
+          "roomTitle": "Комната 2",
+          "picture": "blob:http://localhost:9000/ff1c0ccb-3322-4f53-98ea-ff05eef212d4",
+          "materials": [
+            {
+              "id": 1685629453439,
+              "name": "Плинтус Европласт 1.53.111, 65х20, 2 м. Плинтус Европласт",
+              "article": 8252791,
+              "price": 223500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
